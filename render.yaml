@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: loveradar-backend
+    runtime: java
+    plan: free
+    buildCommand: mvn clean package
+    startCommand: java -jar target/loveradar-backend-1.0.0.jar
