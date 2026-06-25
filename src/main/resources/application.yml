@@ -3,9 +3,9 @@ spring:
     name: loveradar-backend
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/loveradar
-    username: postgres
-    password: Rakiblast@2005
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/loveradar}
+    username: ${SPRING_DATASOURCE_USERNAME:postgres}
+    password: ${SPRING_DATASOURCE_PASSWORD:Rakiblast@2005}
     driver-class-name: org.postgresql.Driver
 
   jpa:
