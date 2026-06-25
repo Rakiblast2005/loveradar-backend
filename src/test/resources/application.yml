@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:loveradar_test;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: false
+
+jwt:
+  secret: test_secret_key_that_is_long_enough_32chars
+  access-expiration-ms: 900000
+  refresh-expiration-ms: 604800000
+
+cors:
+  allowed-origins: http://localhost:5173
+
+loveradar:
+  proximity:
+    check-interval-ms: 10000
+    stale-location-seconds: 60
+  rate-limit:
+    capacity: 1000
+    refill-tokens: 1000
+    refill-duration-seconds: 60

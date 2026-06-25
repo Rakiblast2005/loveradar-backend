@@ -1,0 +1,8 @@
+com\loveradar\service\SessionServiceTest$Create.class
+com\loveradar\service\SessionServiceTest$Join.class
+com\loveradar\service\ProximityServiceTest.class
+com\loveradar\service\ContactServiceTest.class
+com\loveradar\service\SessionServiceTest$End.class
+com\loveradar\util\HaversineUtilTest.class
+com\loveradar\service\AuthServiceTest.class
+com\loveradar\service\SessionServiceTest.class
